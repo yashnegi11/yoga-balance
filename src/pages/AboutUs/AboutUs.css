@@ -1,0 +1,176 @@
+.about-us {
+  padding: 2rem;
+  background-color: #f0f0f0;
+  margin-top: 0; /* Ensure the section starts right after the navbar */
+}
+
+.instructor-section {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 4rem;
+  flex-wrap: nowrap; /* Do not allow wrapping on larger screens */
+}
+
+.instructor-photo {
+  width: 30%;
+  max-width: 300px;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+
+.instructor-info {
+  width: 70%;
+  max-width: 600px;
+}
+
+.instructor-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.instructor-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-yoga-balance-section {
+  margin-top: 4rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-yoga-balance-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-yoga-balance-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.instructor-carousel-section {
+  margin-top: 4rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.instructor-carousel-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel .slide img {
+  border-radius: 1rem;
+}
+
+/* Media Query for tablets and larger screens */
+@media (max-width: 1024px) {
+  .instructor-section {
+    flex-direction: row; /* Keep image and text side by side */
+  }
+
+  .instructor-photo {
+    width: 30%;
+    margin-right: 1rem;
+  }
+
+  .instructor-info {
+    width: 70%;
+  }
+
+  .instructor-info h2,
+  .about-yoga-balance-section h2,
+  .instructor-carousel-section h2 {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .instructor-info p,
+  .about-yoga-balance-section p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Media Query for large laptops and desktops */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .instructor-info {
+    width: 60%;
+  }
+
+  .instructor-photo {
+    width: 40%;
+    max-width: 400px;
+  }
+
+  .instructor-info h2,
+  .about-yoga-balance-section h2,
+  .instructor-carousel-section h2 {
+    font-size: 2.5rem; /* Adjust font size for larger screens */
+  }
+
+  .instructor-info p,
+  .about-yoga-balance-section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Query for very large screens */
+@media (min-width: 1441px) {
+  .instructor-section {
+    justify-content: flex-start; /* Align the section to the start */
+  }
+
+  .instructor-info {
+    width: 50%;
+    padding-right: 2rem; /* Add padding to avoid excessive space on the right */
+  }
+
+  .instructor-photo {
+    width: 50%;
+    max-width: 500px;
+  }
+
+  .instructor-info h2,
+  .about-yoga-balance-section h2,
+  .instructor-carousel-section h2 {
+    font-size: 3rem; /* Adjust font size for very large screens */
+  }
+
+  .instructor-info p,
+  .about-yoga-balance-section p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media Query for mobile screens */
+@media (max-width: 767px) {
+  .instructor-section {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+    align-items: center;
+  }
+
+  .instructor-photo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+
+  .instructor-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .instructor-info h2,
+  .about-yoga-balance-section h2,
+  .instructor-carousel-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .instructor-info p,
+  .about-yoga-balance-section p {
+    font-size: 0.9rem;
+  }
+}

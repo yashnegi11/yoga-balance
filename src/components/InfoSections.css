@@ -1,0 +1,141 @@
+/* InfoSections.css */
+.info-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.info-section.left {
+  justify-content: flex-start;
+  padding-left: 10%;
+}
+
+.info-section.right {
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+
+.info-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  color: #333;
+}
+
+.info-content h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.info-content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.info-buttons {
+  margin-top: 1.5rem;
+}
+
+.info-buttons .btn {
+  padding: 0.5rem 1rem;
+  background-color: #f05454;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.info-buttons .btn:hover {
+  background-color: #ff7675;
+}
+
+.info-section.left .info-content {
+  margin-left: 0;
+  text-align: left;
+}
+
+.info-section.right .info-content {
+  margin-right: 0;
+  text-align: right;
+}
+
+.yoga-asanas {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), url('/src/assets/hero/img2.jpg') no-repeat center center/cover;
+}
+
+.meditation {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), url('/src/assets/hero/img3.jpg') no-repeat center center/cover;
+}
+
+.pranayama {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), url('/src/assets/hero/img4.jpg') no-repeat center center/cover;
+}
+
+.quote-section {
+  background: #f0f0f0;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.quote-content {
+  background: rgba(219, 219, 219, 0.9); /* Cream color with more opacity */
+  padding: 2rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.quote-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.quote-content p {
+  font-size: 1.2rem;
+}
+
+/* Media queries for tablet and mobile screens */
+@media (max-width: 1023px) {
+  .info-section {
+    padding: 2rem 1rem;
+  }
+
+  .info-content {
+    padding: 1.5rem;
+  }
+
+  .info-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .info-content p {
+    font-size: 1.2rem;
+  }
+
+  .info-section.left,
+  .info-section.right {
+    padding: 2rem 1rem;
+    justify-content: center;
+  }
+
+  .info-section.left .info-content,
+  .info-section.right .info-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .info-content {
+    background: rgba(255, 255, 255, 0.5); /* Reduced opacity */
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+}
