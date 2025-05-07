@@ -39,9 +39,10 @@ yoga-balance/
 
 ```
 
-## 🔗 Live Demo
+## 🌐 Live Demo
 
-Coming soon (can be deployed using **Netlify**, **Vercel**, or **GitHub Pages**)
+[Click here to view the live demo](https://yoga-balance.vercel.app)
+
 
 ## 📝 License
 
