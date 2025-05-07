@@ -25,10 +25,10 @@ const Navbar = () => {
             <li><Link to="/contact-us">Contact Us</Link></li>
           </ul>
           <div className="navbar-buttons">
-            <a href="https://www.youtube.com/channel/UCYogBalance" className="btn youtube-btn">
+            <a href="https://www.youtube.com/results?search_query=yoga" className="btn youtube-btn">
               <i className="fab fa-youtube" /> Yog Balance
             </a>
-            <a href="#register" className="btn register-btn">
+            <a href="join" className="btn register-btn">
               <i className="fas fa-user-plus" /> Register
             </a>
           </div>

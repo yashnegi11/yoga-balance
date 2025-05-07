@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="hero-content">
         <h1>Transform Your Life with Yoga and Meditation</h1>
         <p>Balance Your Body, Balance Your Life.</p>
-        <a href="#learn-more" className="hero-btn">Learn More</a>
+        <a href="learn-more" className="hero-btn">Learn More</a>
       </div>
     </section>
   );

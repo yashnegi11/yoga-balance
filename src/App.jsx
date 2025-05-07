@@ -14,6 +14,7 @@ import Disclaimer from './pages/Disclaimer/Disclaimer';
 import Donate from './pages/Donate/Donate';
 import Socials from './pages/Socials/Socials';
 import Join from './pages/Join/Join';
+import AboutYoga from './pages/LearnMore/AboutYoga';
 import './App.css';
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
           <Route path='/donate' element={<Donate />} />
           <Route path='/socials' element={<Socials />} />
           <Route path='/join' element={<Join />} />
+          <Route path="/learn-more" element={<AboutYoga />} />
         </Routes>
       </div>
     </Router>
