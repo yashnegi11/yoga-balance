@@ -1,3 +1,4 @@
+
 # 🧘 Yoga Balance - Responsive Frontend Web Application
 
 **Yoga Balance** is a modern, responsive frontend web application designed to promote physical and mental wellness through yoga. This project was built as a client-side application showcasing essential yoga asanas, their benefits, and promoting a healthy lifestyle through intuitive design and interactive UI.
@@ -19,20 +20,24 @@
 - **Git** & **GitHub** – Version control and project hosting
 
 ## 📂 Project Structure
+
+```
+
 yoga-balance/
 │
 ├── public/
 ├── src/
-│ ├── assets/ # Images and media
-│ ├── components/ # Reusable UI components (Navbar, Hero, Footer)
-│ ├── pages/ # YogaAsanas page
-│ ├── App.jsx # Main app entry with routing
-│ └── index.css
+│   ├── assets/          # Images and media
+│   ├── components/      # Reusable UI components (Navbar, Hero, Footer)
+│   ├── pages/           # YogaAsanas page
+│   ├── App.jsx          # Main app entry with routing
+│   └── index.css
 ├── .gitignore
 ├── README.md
 ├── package.json
 └── vite.config.js
 
+```
 
 ## 🔗 Live Demo
 
@@ -47,6 +52,7 @@ This project is licensed under the [MIT License](LICENSE).
 Feel free to fork the repo, open issues, or submit PRs. Feedback and suggestions are always welcome!
 
 ---
+
 
 
 <<<<<<< HEAD
