@@ -34,7 +34,7 @@ const App = () => {
           <Route path="/yoga-asanas" element={<YogaAsanas />} />
           <Route path="/meditation" element={<Meditation />} />
           <Route path="/pranayama" element={<Pranayama />} />
-          <Route path="/contact-us" element={<ContactUs />} /> {/* Add route for ContactUs */}
+          <Route path="/contact-us" element={<ContactUs />} /> 
           <Route path='/policy' element={<PolicyPage />} />
           <Route path='/disclaimer' element={<Disclaimer />} />
           <Route path='/donate' element={<Donate />} />

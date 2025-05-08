@@ -1,11 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import './Pranayama.css';
-import benefitsImage from '../../assets/hero/img7.jpg'; // Ensure the path is correct
-import tryPranayamaImage from '../../assets/hero/img8.jpg'; // Ensure the path is correct
+import benefitsImage from '../../assets/hero/img7.jpg';
+import tryPranayamaImage from '../../assets/hero/img8.jpg';
 
 const Pranayama = () => {
+  const navigate = useNavigate(); // Initialize navigation
+
+  const handleJoinClick = () => {
+    navigate('/join'); // Redirect to /join
+  };
+
   return (
     <div>
       <Navbar />
@@ -17,8 +24,9 @@ const Pranayama = () => {
         <p>
           Regular practice of pranayama techniques improves respiratory efficiency, reduces stress, and promotes relaxation.
         </p>
-        <button className="join-button">Join</button>
+        <button className="join-button" onClick={handleJoinClick}>Join</button>
       </div>
+
       <div className="benefits-section">
         <img src={benefitsImage} alt="Benefits of Pranayama" />
         <h2>Benefits of Pranayama</h2>
@@ -41,11 +49,13 @@ const Pranayama = () => {
           </ul>
         </div>
       </div>
+
       <div className="try-pranayama-section">
         <img src={tryPranayamaImage} alt="Try Pranayama Classes" />
         <div className="overlay-text">Try Our Pranayama Classes</div>
-        <button className="join-button">Join</button>
+        <button className="join-button" onClick={handleJoinClick}>Join</button>
       </div>
+
       <Footer />
     </div>
   );

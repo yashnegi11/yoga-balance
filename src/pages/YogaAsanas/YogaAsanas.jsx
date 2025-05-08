@@ -1,11 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import the hook
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import './YogaAsanas.css';
-import benefitsImage from '../../assets/hero/img5.jpg'; // Ensure the path is correct
-import tryYogaImage from '../../assets/hero/img8.jpg'; // Ensure the path is correct
+import benefitsImage from '../../assets/hero/img5.jpg';
+import tryYogaImage from '../../assets/hero/img8.jpg';
 
 const YogaAsanas = () => {
+  const navigate = useNavigate(); // Initialize navigation
+
+  const handleJoinClick = () => {
+    navigate('/join'); // Navigate to Join page
+  };
+
   return (
     <div>
       <Navbar />
@@ -17,8 +24,9 @@ const YogaAsanas = () => {
         <p>
           Practicing yoga asanas enhances flexibility, builds strength, and promotes inner balance. These postures support physical health, improve mental clarity, and foster emotional stability, contributing to overall well-being.
         </p>
-        <button className="join-button">Join</button>
+        <button className="join-button" onClick={handleJoinClick}>Join</button>
       </div>
+
       <div className="benefits-section">
         <img src={benefitsImage} alt="Benefits of Yoga Asanas" />
         <h2>Benefits of Yoga Asanas</h2>
@@ -41,11 +49,13 @@ const YogaAsanas = () => {
           </ul>
         </div>
       </div>
+
       <div className="try-yoga-section">
         <img src={tryYogaImage} alt="Try Yoga Classes" />
         <div className="overlay-text">Try Our Yoga Classes</div>
-        <button className="join-button">Join</button>
+        <button className="join-button" onClick={handleJoinClick}>Join</button>
       </div>
+
       <Footer />
     </div>
   );
