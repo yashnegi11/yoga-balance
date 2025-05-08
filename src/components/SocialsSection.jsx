@@ -16,7 +16,7 @@ const Socials = () => {
         <a href="https://www.instagram.com/yashnegi.11" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
           <i className="fab fa-instagram"></i> Instagram
         </a>
-        <a href="https://www.linkedin.com/in/yashnegi11" target="_blank" rel="noopener noreferrer" className="social-icon linkedin">
+        <a href="https://www.linkedin.com/in/yashnegi69" target="_blank" rel="noopener noreferrer" className="social-icon linkedin">
           <i className="fab fa-linkedin-in"></i> LinkedIn
         </a>
         <a href="mailto:yashnegiuk02@example.com" className="social-icon email">
